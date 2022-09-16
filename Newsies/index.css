@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(27, 22, 22);
+
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+#linkPapers a{ 
+    font-size: 25px;
+    color: #E6DED3;
+    line-break: strict;
+
+}
+
+a{
+    color: #E6DED3;
+
+}
+
+h1{
+    color: #E6DED3; 
+
+}
+
