@@ -13,17 +13,20 @@ body{
 #linkPapers a{ 
     font-size: 25px;
     color: #E6DED3;
-    line-break: strict;
+    line-break: strict;    
+    line-height:35px;
 
 }
 
 a{
     color: #E6DED3;
+    line-height:5px;
 
 }
 
 h1{
     color: #E6DED3; 
+    line-height:5px;
 
 }
 
