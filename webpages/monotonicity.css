@@ -1,19 +1,26 @@
-
 body{
-    background-color: #44342b;
+background-color: #686A6C;
+;
 
 }
 
 h1{
-    color:#686A6C;
+    color: #eeeeee;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 
 }
-    
-p{
+
+h2{
     color: #eeeeee;
+    text-align: center;
+    font-size: 45px;
+    
+}
+
+p{
+    color: #44342b;
     font-size: 20px;
     line-height: 25px;
     font: garamond;
