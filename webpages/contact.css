@@ -1,5 +1,6 @@
 body{
     background-color: #7f937c;
+    font-family: 'Montserrat Alternates', sans-serif;
 
 }
 
@@ -15,7 +16,6 @@ p{
     color: #eeeeee;
     font-size: 20px;
     line-height: 25px;
-    font: garamond;
     text-indent: 1%;
     text-align: center;
 
