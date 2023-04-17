@@ -1,0 +1,24 @@
+body{
+    background-image: url(images/illusion.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    color: #8db7c1;
+}
+
+h2{
+    text-align: center;
+    color: #8db7c1;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
