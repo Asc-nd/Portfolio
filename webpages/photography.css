@@ -31,5 +31,6 @@ p{
 
 img{
     display: inline;
+    border: 5px solid rgb(27, 22, 22);
 
 }

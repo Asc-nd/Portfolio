@@ -21,3 +21,18 @@ body{
 
 }
 
+.arrow {
+    display: inline-block;
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 2px solid #E6DED3;
+    border-right: 2px solid #E6DED3;
+    margin: 5px; 
+
+  }
+
+.arrow-right {
+    transform: rotate(45deg);
+  }
+
+
