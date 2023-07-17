@@ -1,11 +1,12 @@
 body{
-    background-color: #908f7d;
+    background-color: #505050;
     font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
     
     }
     
     h1{
-        color: #3c3729;
+        color: #ffffff;
         text-align: center;
         font-size: 50px;
         line-height: 0.5;
@@ -13,7 +14,7 @@ body{
     }
     
     p{
-        color: #6e5810;
+        color: #adadad;
         font-size: 20px;
         line-height: 25px;
         font: garamond;

@@ -2,7 +2,8 @@
 body{
     background-color: #152e15;
     font-family: 'Montserrat Alternates', sans-serif;
-        
+    overflow-x: hidden;
+          
 }
 
 h1{
@@ -14,7 +15,7 @@ h1{
 }
 
 p{
-    color: #E6DED3;
+    color: #dfdfdf;
     font-size: 20px;
     line-height: 25px;
     font: garamond;

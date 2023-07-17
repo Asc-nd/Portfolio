@@ -1,7 +1,8 @@
 body{
     background-color: rgb(201,199,236);
     font-family: 'Montserrat Alternates', sans-serif;
-
+    overflow-x: hidden;
+    
 }
 
 .nav-bar {

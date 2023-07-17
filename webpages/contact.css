@@ -1,6 +1,7 @@
 body{
     background-color: #04345fd4;
     font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
 
 }
 

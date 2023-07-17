@@ -8,6 +8,7 @@
 body{
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: rgb(78, 6, 123);
+    overflow-x: hidden;
 
 }
 
