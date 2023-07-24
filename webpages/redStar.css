@@ -1,7 +1,6 @@
 
 body{
-    background-color: #DB261D;
-    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #CC0000;
     overflow-x: hidden;
     
 }
@@ -23,7 +22,7 @@ h2{
 }
 
 p{
-    color: #FFF903;
+    color: #FFD700;
     font-size: 20px;
     line-height: 5px;
     font: garamond;
