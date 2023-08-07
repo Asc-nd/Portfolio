@@ -1,15 +1,27 @@
-body{
+body {
     overflow-x: hidden;
     
 }
 
+h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+}
 
-#date{
+h1 {
+    color: #c4ced3;
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+#date {
     color: #c4c3d0;
 
 }
 
-#class{
+#class {
     color: #c4c3d0;
 
 }
