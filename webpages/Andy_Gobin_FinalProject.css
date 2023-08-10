@@ -34,6 +34,15 @@ p {
  line-height: 25px;
  padding-left: 12.5%;
  padding-right: 12.5%;
+ overflow-wrap: break-word;
+
+}
+
+h4 {
+    color: #c4ced3;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
 
 }
 
@@ -52,3 +61,17 @@ a {
     color: white;
 
 }
+
+.arrow {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    margin: 1px; 
+
+  }
+
+.arrow-right {
+    transform: rotate(45deg);
+  }
