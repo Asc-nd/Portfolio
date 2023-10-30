@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(201,199,236);
+    background-color: rgb(27, 22, 22);
     overflow-x: hidden;
     
 }
@@ -12,7 +12,7 @@ body{
 }
 
 a{
-    color: #20b43996;
+    color: #b40b51;
     line-height:5px;
     text-indent: 5%;    
 
@@ -31,7 +31,7 @@ p{
 
 img{
     display: inline;
-    border: 5px solid rgb(27, 22, 22);
+    border: 5px solid #e6ded34e;
 
 }
 

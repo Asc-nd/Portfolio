@@ -1,19 +1,29 @@
 body {
     overflow-x: hidden;
+    background-color: #74AA9C;
     
 }
 
 h1 {
+    color: 	#ece2d0;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 }
 
-h1 {
-    color: #c4ced3;
+h2{
+    color: #ece2d0;
     text-align: center;
-    font-size: 50px;
-    line-height: 0.5;
+    font-size: 45px;
+    
+}
+
+p{
+    color: #202123;
+    font-size: 20px;
+    line-height: 25px;
+    text-indent: 5%;
+
 }
 
 #date {
@@ -33,22 +43,10 @@ h1 {
 
 }
 
-.arrow {
-    display: inline-block;
-    width: 7.5px;
-    height: 7.5px;
-    border-top: 2px solid #E6DED3;
-    border-right: 2px solid #E6DED3;
-    margin: 5px; 
-
-  }
-
-.arrow-right {
-    transform: rotate(45deg);
-  }
-
 a{
     color: white;
 
 }
+
+
 
