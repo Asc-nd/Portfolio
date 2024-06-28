@@ -1,17 +1,18 @@
 body {
     overflow-x: hidden;
-    
+    background-color: #db8f9d;
+
 }
 
 h1 {
-    color: #c4ced3;
+    color: #00a457;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 }
 
 p{
-    color: #373737;
+    color: #323232;
     font-size: 20px;
     line-height: 25px;
     font: garamond;
@@ -36,22 +37,7 @@ p{
 
 }
 
-.arrow {
-    display: inline-block;
-    width: 7.5px;
-    height: 7.5px;
-    border-top: 2px solid #E6DED3;
-    border-right: 2px solid #E6DED3;
-    margin: 5px; 
-
-  }
-
-.arrow-right {
-    transform: rotate(45deg);
-  }
-
 a{
     color: white;
 
 }
-
