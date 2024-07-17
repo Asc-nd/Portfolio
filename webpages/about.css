@@ -6,12 +6,17 @@
 }
 
 body{
-    background-color: rgba(56, 36, 8, 0.418);
+    background-color: rgb(27, 22, 22);
     overflow-x: hidden;
 
 }
 
 a{
-    color: white;
+    color: rgb(223, 134, 184);
+
+}
+
+p{
+    color: rgb(223, 134, 184);
 
 }
