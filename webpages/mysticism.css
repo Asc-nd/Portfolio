@@ -1,0 +1,58 @@
+body {
+    overflow-x: hidden;
+    background-color: #445148;
+
+}
+
+h1 {
+    color: #678590;
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+}
+
+p{
+    color: #788b85;
+    font-size: 20px;
+    line-height: 25px;
+    font: garamond;
+    text-indent: 5%;
+
+}
+
+#date {
+    color: #c4c3d0;
+
+}
+
+#class {
+    color: #c4c3d0;
+
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+.arrow {
+    display: inline-block;
+    width: 7.5px;
+    height: 7.5px;
+    border-top: 2px solid #E6DED3;
+    border-right: 2px solid #E6DED3;
+    margin: 5px; 
+
+  }
+
+.arrow-right {
+    transform: rotate(45deg);
+  }
+
+a{
+    color: white;
+
+}
+
