@@ -11,7 +11,7 @@ h1 {
     line-height: 0.5;
 }
 
-p{
+p {
     color: #788b85;
     font-size: 20px;
     line-height: 25px;
@@ -43,16 +43,15 @@ p{
     height: 7.5px;
     border-top: 2px solid #E6DED3;
     border-right: 2px solid #E6DED3;
-    margin: 5px; 
-
-  }
-
-.arrow-right {
-    transform: rotate(45deg);
-  }
-
-a{
-    color: white;
+    margin: 5px;
 
 }
 
+.arrow-right {
+    transform: rotate(45deg);
+}
+
+a {
+    color: white;
+
+}

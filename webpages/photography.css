@@ -1,7 +1,7 @@
-body{
+body {
     background-color: rgb(27, 22, 22);
     overflow-x: hidden;
-    
+
 }
 
 .nav-bar {
@@ -11,15 +11,15 @@ body{
 
 }
 
-a{
+a {
     color: #f4d10d;
-    line-height:5px;
-    text-indent: 5%;    
+    line-height: 5px;
+    text-indent: 5%;
 
 }
 
 
-p{
+p {
     color: #f4d10d;
     font-size: 30px;
     font: garamond;
@@ -29,22 +29,21 @@ p{
 
 }
 
-img{
+img {
     display: inline;
     border: 5px solid #e6ded34e;
 
 }
 
-.category{
+.category {
     font-size: 45px;
-    
+
 }
 
-h1{
-    color:#f4d10d;
+h1 {
+    color: #f4d10d;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 
 }
-

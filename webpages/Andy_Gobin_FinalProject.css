@@ -1,15 +1,15 @@
 body {
     background-color: #132448;
     overflow-x: hidden;
-    
-    
+
+
 }
 
 h1 {
- color: #c4ced3;
- text-align: center;
- font-size: 50px;
- line-height: 0.5;
+    color: #c4ced3;
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
 }
 
 h2 {
@@ -29,12 +29,12 @@ h3 {
 }
 
 p {
- color: #c4ced3;
- font-size: 20px;
- line-height: 25px;
- padding-left: 12.5%;
- padding-right: 12.5%;
- overflow-wrap: break-word;
+    color: #c4ced3;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    overflow-wrap: break-word;
 
 }
 
@@ -47,7 +47,7 @@ h4 {
 }
 
 #chart {
-    color:#686A6C;
+    color: #686A6C;
 }
 
 .nav-bar {
@@ -68,10 +68,10 @@ a {
     height: 9px;
     border-top: 3px solid white;
     border-right: 3px solid white;
-    margin: 1px; 
+    margin: 1px;
 
-  }
+}
 
 .arrow-right {
     transform: rotate(45deg);
-  }
+}

@@ -1,25 +1,25 @@
-body{
+body {
     background-color: #111;
     overflow-x: hidden;
-    
+
 }
 
-h1{
-    color:#765898;
+h1 {
+    color: #765898;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 
 }
 
-h2{
-    color:#52d053;
+h2 {
+    color: #52d053;
     text-align: center;
     font-size: 45px;
-    
+
 }
 
-p{
+p {
     color: #eeeeee;
     font-size: 20px;
     line-height: 25px;
@@ -28,29 +28,29 @@ p{
 }
 
 
-h3{
+h3 {
     color: #eeeeee;
     font-size: 25px;
 
 }
 
-#date{
+#date {
     color: #c4c3d0;
 
 }
 
-#class{
+#class {
     color: #c4c3d0;
 
 }
 
-footer{
+footer {
     display: block;
     color: #F7BB2A;
 
 }
 
-#Bibliography a{
+#Bibliography a {
     color: #A2B2DF;
 
 }
@@ -62,7 +62,7 @@ footer{
 
 }
 
-a{
+a {
     color: white;
 
 }

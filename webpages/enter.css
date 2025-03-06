@@ -1,23 +1,22 @@
-body{
+body {
     background-image: url(images/illusion.gif);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-h1{
+h1 {
     text-align: center;
     color: #8db7c1;
 }
 
-h2{
+h2 {
     text-align: center;
     color: #8db7c1;
 
 }
 
-a{
+a {
     text-decoration: none;
 
 }
-

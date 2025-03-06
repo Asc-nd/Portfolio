@@ -1,45 +1,44 @@
-body{
+body {
     background-color: #505050;
     overflow-x: hidden;
-    
-    }
-    
-    h1{
-        color: #ffffff;
-        text-align: center;
-        font-size: 50px;
-        line-height: 0.5;
-    
-    }
-    
-    p{
-        color: #adadad;
-        font-size: 20px;
-        line-height: 25px;
-        font: garamond;
-        text-indent: 5%;
-    
-    }
-    
-    #date{
-        color: #c4c3d0;
-    
-    }
-    
-    #class{
-        color: #c4c3d0;
-    
-    }
-    
-    .nav-bar {
-        width: 100%;
-        margin: 10px;
-        font-size: 25px;
-    
-    }
-    
-    a{
-        color: white;
-        
-    }
-    
+
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    line-height: 0.5;
+
+}
+
+p {
+    color: #adadad;
+    font-size: 20px;
+    line-height: 25px;
+    font: garamond;
+    text-indent: 5%;
+
+}
+
+#date {
+    color: #c4c3d0;
+
+}
+
+#class {
+    color: #c4c3d0;
+
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+a {
+    color: white;
+
+}

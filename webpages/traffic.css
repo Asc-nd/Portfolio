@@ -1,19 +1,18 @@
-
-body{
+body {
     background-color: #284b17cd;
     overflow-x: hidden;
-          
+
 }
 
-h1{
-    color:#2c2c2c;
+h1 {
+    color: #2c2c2c;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 
 }
 
-p{
+p {
     color: #373737;
     font-size: 20px;
     line-height: 25px;
@@ -22,12 +21,12 @@ p{
 
 }
 
-#date{
+#date {
     color: #c4c3d0;
 
 }
 
-#class{
+#class {
     color: #c4c3d0;
 
 }
@@ -39,7 +38,7 @@ p{
 
 }
 
-a{
+a {
     color: white;
-    
+
 }
