@@ -72,14 +72,13 @@ img:hover {
 }
 
 /* Responsive Grid */
-.photo-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.photos {
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
     gap: 10px;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 10px;
-    justify-items: center;
+    width: 75%;
 }
 
 
