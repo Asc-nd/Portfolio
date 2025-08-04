@@ -73,3 +73,10 @@ img:hover {
     margin: 20px auto;
     padding: 0 10px;
 }
+
+h2 {
+    color: #f4d10d;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
