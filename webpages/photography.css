@@ -11,6 +11,13 @@ h1 {
     line-height: 0.5;
 }
 
+h2 {
+    color: #f4d10d;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
 p {
     color: #373737;
     font-size: 20px;
@@ -55,28 +62,24 @@ a {
 img {
     width: 100%;
     height: auto;
-    border: 5px solid #e6ded34e;
+    border: 5px solid white;
     border-radius: 4px;
     transition: transform 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
 
 /* Responsive Grid */
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 1fr;
     gap: 10px;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0 10px;
+    justify-items: center;
 }
 
-h2 {
-    color: #f4d10d;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-}
+
