@@ -1,20 +1,7 @@
-.nav-bar {
-    width: 100%;
-    margin: 10px;
-    font-size: 25px;
-
-
-}
-
 body {
     background-color: rgb(27, 22, 22);
     overflow-x: hidden;
     font-family: Eva;
-
-}
-
-a {
-    color: #E6DED3;
 
 }
 
@@ -27,6 +14,19 @@ p {
 
 #date {
     color: #c4c3d0;
+
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 10px;
+    font-size: 25px;
+
+
+}
+
+a {
+    color: #E6DED3;
 
 }
 
