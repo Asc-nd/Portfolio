@@ -2,6 +2,8 @@ body {
     background-image: url(images/illusion.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Eva;
+
 
 }
 
@@ -19,4 +21,9 @@ h2 {
 a {
     text-decoration: none;
 
+}
+
+@font-face {
+    font-family: Eva;
+    src: url(assets/EVA-Matisse_Standard.ttf);
 }

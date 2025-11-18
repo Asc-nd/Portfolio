@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     background-color: #2e4557;
+    font-family: Eva;
+
 
 }
 
@@ -50,4 +52,9 @@ footer {
 a {
     color: white;
 
+}
+
+@font-face {
+    font-family: Eva;
+    src: url(assets/EVA-Matisse_Standard.ttf);
 }

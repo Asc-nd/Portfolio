@@ -2,6 +2,7 @@
     width: 100%;
     margin: 10px;
     font-size: 25px;
+    font-family: Eva;
 
 }
 
@@ -38,5 +39,10 @@ p {
 .instagram-media {
     width: auto !important;
     margin: 0 auto !important;
-    
+
+}
+
+@font-face {
+    font-family: Eva;
+    src: url(assets/EVA-Matisse_Standard.ttf)
 }

@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
     background-color: #db8f9d;
+    font-family: Eva;
 
 }
 
@@ -40,4 +41,9 @@ p {
 a {
     color: white;
 
+}
+
+@font-face {
+    font-family: Eva;
+    src: url(assets/EVA-Matisse_Standard.ttf);
 }

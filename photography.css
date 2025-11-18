@@ -1,6 +1,7 @@
 body {
     background-color: rgb(27, 22, 22);
     overflow-x: hidden;
+    font-family: Eva;
 
 }
 
@@ -80,4 +81,9 @@ img:hover {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+@font-face {
+    font-family: Eva;
+    src: url(assets/EVA-Matisse_Standard.ttf);
 }
