@@ -5,14 +5,14 @@ body {
 }
 
 h1 {
-    color: #f4d10d;
+    color: #E6DED3;
     text-align: center;
     font-size: 50px;
     line-height: 0.5;
 }
 
 h2 {
-    color: #f4d10d;
+    color: #E6DED3;
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
@@ -51,7 +51,7 @@ p {
 }
 
 a {
-    color: #f4d10d;
+    color: #E6DED3;
     text-decoration: underline;
     text-indent: 5%;
     line-height: 5px;
