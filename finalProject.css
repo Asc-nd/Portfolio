@@ -80,3 +80,38 @@ a {
     font-family: Eva;
     src: url(assets/EVA-Matisse_Standard.ttf);
 }
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .nav-bar {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    #linkPapers a {
+        font-size: 22px;
+        line-height: 28px;
+        word-break: break-word;
+    }
+
+    a {
+        font-size: 16px;
+        line-height: 20px;
+        text-indent: 3%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .arrow {
+        width: 6px;
+        height: 6px;
+        margin: 3px;
+    }
+}
