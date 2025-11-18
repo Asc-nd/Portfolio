@@ -2,13 +2,14 @@
     width: 100%;
     margin: 10px;
     font-size: 25px;
-    font-family: Eva;
+
 
 }
 
 body {
     background-color: rgb(27, 22, 22);
     overflow-x: hidden;
+    font-family: Eva;
 
 }
 
