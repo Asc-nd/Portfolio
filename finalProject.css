@@ -2,7 +2,7 @@ body {
     background-color: #132448;
     overflow-x: hidden;
     font-family: Eva;
-    
+
 
 }
 
@@ -49,6 +49,14 @@ h4 {
 #chart {
     color: #686A6C;
 }
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: none;
+}
+
 
 .nav-bar {
     width: 100%;
@@ -114,4 +122,11 @@ a {
         height: 6px;
         margin: 3px;
     }
+
+    @media (max-width: 600px) {
+        iframe {
+            height: 220px;
+        }
+    }
+
 }
