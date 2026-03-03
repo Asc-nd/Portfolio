@@ -1,55 +1,25 @@
 body {
     background-color: rgb(27, 22, 22);
-    overflow-x: hidden;
     font-family: Eva;
-
 }
 
 h1 {
     color: #E6DED3;
-    text-align: center;
-    font-size: 50px;
-    line-height: 1.1;
+
 }
 
 h2 {
     color: #E6DED3;
-    text-align: center;
     font-size: 30px;
     margin-top: 20px;
+
 }
 
 p {
     color: #373737;
-    font-size: 20px;
-    line-height: 25px;
-    font-family: Garamond, serif;
-    text-indent: 5%;
+
 }
 
-#date,
-#class {
-    color: #c4c3d0;
-}
-
-.nav-bar {
-    width: 100%;
-    margin: 10px;
-    font-size: 25px;
-}
-
-.arrow {
-    display: inline-block;
-    width: 7.5px;
-    height: 7.5px;
-    border-top: 2px solid #E6DED3;
-    border-right: 2px solid #E6DED3;
-    margin: 5px;
-}
-
-.arrow-right {
-    transform: rotate(45deg);
-}
 
 a {
     color: #E6DED3;
@@ -126,41 +96,10 @@ img:hover {
 }
 
 @media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .nav-bar {
-        font-size: 18px;
-        margin: 5px 0;
-    }
-
-    #linkPapers a {
-        font-size: 22px;
-        line-height: 28px;
-        word-break: break-word;
-    }
-
-    a {
-        font-size: 16px;
-        line-height: 20px;
-        text-indent: 3%;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .arrow {
-        width: 6px;
-        height: 6px;
-        margin: 3px;
-    }
-
     #lightbox img {
         max-width: 94vw;
         max-height: 94vh;
+
     }
+
 }

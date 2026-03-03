@@ -1,5 +1,4 @@
 body {
-    padding: 10px;
     overflow-x: hidden;
     font-family: Eva;
 
@@ -12,11 +11,16 @@ h1 {
     line-height: 1.1;
 }
 
+h2 {
+    text-align: center;
+    font-size: 45px;
+
+}
+
 p {
     color: #373737;
     font-size: 20px;
     line-height: 25px;
-    font: garamond;
     text-indent: 5%;
 
 }
@@ -74,12 +78,6 @@ a {
         margin: 5px 0;
     }
 
-    #linkPapers a {
-        font-size: 22px;
-        line-height: 28px;
-        word-break: break-word; 
-    }
-
     a {
         font-size: 16px;
         line-height: 20px;
@@ -88,6 +86,10 @@ a {
 
     h1 {
         font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
     }
 
     .arrow {
