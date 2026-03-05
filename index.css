@@ -27,6 +27,11 @@ h1 {
 
 }
 
+p {
+    color: #E6DED3;
+
+}
+
 @font-face {
     font-family: Eva;
     src: url(assets/EVA-Matisse_Standard.ttf);
