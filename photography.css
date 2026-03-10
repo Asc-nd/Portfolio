@@ -103,3 +103,15 @@ img:hover {
     }
 
 }
+
+/* Lazy loading styles */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    min-height: 200px; 
+    background: #f0f0f0; 
+}
+
+.lazy[src] {
+    opacity: 1;  
+}
