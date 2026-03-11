@@ -92,8 +92,16 @@
         "alt": "Sophia"
     },
     {
-        "src": "assets/placeholder.jpg",
-        "alt": "placeholder"
+        "src": "images/film/thankYou.jpg",
+        "alt": "Thank You"
+    },
+    {
+        "src": "images/film/florida1.jpg",
+        "alt": "Florida beach"
+    },
+    {
+        "src": "images/film/yankeeStadium1.jpg",
+        "alt": "Yankee Stadium"
     },
     {
         "src": "images/film/tdp.jpg",
