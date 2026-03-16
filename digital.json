@@ -274,5 +274,30 @@
     {
         "src": "images/digital/hockey6.jpg",
         "alt": "Midd Hockey"
+    },
+    {
+        "src": "images/digital/baseball1.jpg",
+        "alt": "Midd Baseball"
+    },
+    {
+        "src": "images/digital/baseball2.jpg",
+        "alt": "Midd Baseball"
+    },
+    {
+        "src": "images/digital/baseball3.jpg",
+        "alt": "Midd Baseball"
+    },
+    {
+        "src": "images/digital/baseball4.jpg",
+        "alt": "Midd Baseball"
+    }
+    ,
+    {
+        "src": "images/digital/baseball5.jpg",
+        "alt": "Midd Baseball"
+    },
+    {
+        "src": "images/digital/baseball6.jpg",
+        "alt": "Midd Baseball"
     }
 ]
