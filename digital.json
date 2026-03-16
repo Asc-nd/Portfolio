@@ -32,7 +32,7 @@
         "alt": "Marina green background"
     },
     {
-        "src": "images/digital/botb.jpg",
+        "src": "images/digital/botb1.jpg",
         "alt": "Bless Your Heart BOTB"
     },
     {
@@ -290,8 +290,7 @@
     {
         "src": "images/digital/baseball4.jpg",
         "alt": "Midd Baseball"
-    }
-    ,
+    },
     {
         "src": "images/digital/baseball5.jpg",
         "alt": "Midd Baseball"
@@ -299,5 +298,17 @@
     {
         "src": "images/digital/baseball6.jpg",
         "alt": "Midd Baseball"
+    },
+    {
+        "src": "images/digital/botb2.jpg",
+        "alt": "BOTB 2026"
+    },
+    {
+        "src": "images/digital/botb3.jpg",
+        "alt": "BOTB 2026"
+    },
+    {
+        "src": "images/digital/botb4.jpg",
+        "alt": "BOTB 2026"
     }
 ]
