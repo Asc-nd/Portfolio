@@ -106,5 +106,29 @@
     {
         "src": "images/film/tdp.jpg",
         "alt": "Macys Thanksgiving Day Parade"
+    },
+    {
+        "src": "images/film/fortTiconderoga1.jpg",
+        "alt": "Fort Ticonderoga"
+    },
+    {
+        "src": "images/film/fortTiconderoga2.jpg",
+        "alt": "Fort Ticonderoga Kings Garden"
+    },
+    {
+        "src": "images/film/knoll1.jpg",
+        "alt": "The Knoll"
+    },
+    {
+        "src": "images/film/puertoRico1.jpg",
+        "alt": "Puerto Rico"
+    },
+    {
+        "src": "images/film/puertoRico2.jpg",
+        "alt": "Puerto Rico"
+    },
+    {
+        "src": "images/film/puertoRico3.jpg",
+        "alt": "Puerto Rico"
     }
 ]
