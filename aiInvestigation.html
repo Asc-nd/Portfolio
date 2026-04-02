@@ -8,14 +8,11 @@
     <link rel="stylesheet" type="text/css" href="assets/template.css">
     <link rel="stylesheet" type="text/css" href="aiInvestigation.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
 </head>
 
 <body>
-    <div class="nav-bar">
-        <span class="Projects"><a href="index.html">Projects</a></span>
-        <span class="photography"><a href="photography.html">Photography</a></span>
-        <span class="about"><a href="about.html">About</a></span>
+    <div id="navbar">
     </div>
 
     <h1 id="firstTitle">AI investigation:</h1>
@@ -154,8 +151,15 @@
         find our own meaning and create our own truths.
     </p>
     <p>Last updated: <span id="last-updated"></span></p>
-    <script src="lastUpdated.js"></script>
-    
+    <script src="assets/lastUpdated.js"></script>
+
+    <script>
+        fetch('assets/navbar.html')
+            .then(r => r.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(e => console.error('Navbar load failed', e));
+    </script>
+
 </body>
 
 </html>

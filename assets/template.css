@@ -35,7 +35,7 @@ p {
 
 }
 
-.nav-bar {
+#nav-bar {
     width: 100%;
     margin: 10px;
     font-size: 25px;
@@ -70,10 +70,10 @@ a {
 
     body {
         padding: 10px;
-        font-size: 16px; 
+        font-size: 16px;
     }
 
-    .nav-bar {
+    #nav-bar {
         font-size: 18px;
         margin: 5px 0;
     }

@@ -13,11 +13,8 @@
 </head>
 
 <body>
-    <!--     Navigation -->
-    <div class="nav-bar">
-        <span><a href="index.html">Projects</a></span>
-        <span><a href="photography.html">Photography</a></span>
-        <span><a href="about.html">About</a></span>
+
+    <div id="navbar">
     </div>
 
     <h1>Shot by Ascnd(Ascnd.JPEG)</h1>
@@ -35,8 +32,16 @@
     <div id="lightbox">
         <img id="lightbox-img" src="" alt="">
     </div>
+
     <p>Last updated: <span id="last-updated"></span></p>
-    <script src="lastUpdated.js"></script>
+    <script src="assets/lastUpdated.js"></script>
+
+    <script>
+        fetch('assets/navbar.html')
+            .then(r => r.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(e => console.error('Navbar load failed', e));
+    </script>
 
 </body>
 
