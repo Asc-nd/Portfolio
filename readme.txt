@@ -1,6 +1,6 @@
 
 This project is my portfolio.
 
-![workflow status](https://github.com/Asc-nd/Portfolio/actions/workflows/node.js.yml/badge.svg)
+[![pages-build-deployment](https://github.com/Asc-nd/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Asc-nd/Portfolio/actions/workflows/pages/pages-build-deployment)
 
-Updated to trigger workflow.
+[![Node.js CI](https://github.com/Asc-nd/Portfolio/actions/workflows/node.js.yml/badge.svg)](https://github.com/Asc-nd/Portfolio/actions/workflows/node.js.yml)
