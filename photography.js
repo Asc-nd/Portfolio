@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Load digital photos
-    fetch('digital.json')
+    fetch('images/digital.json')
         .then(response => response.json())
         .then(data => {
             const digitalDiv = document.getElementById('digital');
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error('Error loading digital photos:', error));
 
     // Load film photos
-    fetch('film.json')
+    fetch('images/film.json')
         .then(response => response.json())
         .then(data => {
             const filmDiv = document.getElementById('film');
