@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/template.css">
     <link rel="stylesheet" type="text/css" href="formativeStranger.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
 </head>
 
 <body>
@@ -76,6 +76,13 @@
     </section>
     <p>Last updated: <span id="last-updated"></span></p>
     <script src="assets/lastUpdated.js"></script>
+
+    <script>
+        fetch('assets/navbar.html')
+            .then(r => r.text())
+            .then(html => document.getElementById('navbar').innerHTML = html)
+            .catch(e => console.error('Navbar load failed', e));
+    </script>
 
 </body>
 
