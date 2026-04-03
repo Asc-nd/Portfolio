@@ -35,7 +35,7 @@ p {
 
 }
 
-#nav-bar {
+#navbar {
     width: 100%;
     margin: 10px;
     font-size: 25px;
@@ -73,7 +73,7 @@ a {
         font-size: 16px;
     }
 
-    #nav-bar {
+    #navbar {
         font-size: 18px;
         margin: 5px 0;
     }
