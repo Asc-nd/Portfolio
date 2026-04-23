@@ -310,5 +310,29 @@
     {
         "src": "images/digital/botb4.jpg",
         "alt": "BOTB 2026"
+    },
+    {
+        "src": "images/digital/tennis1.jpg",
+        "alt": "Midd Tennis"
+    },
+    {
+        "src": "images/digital/tennis2.jpg",
+        "alt": "Midd Tennis"
+    },
+    {
+        "src": "images/digital/tennis3.jpg",
+        "alt": "Midd Tennis"
+    },
+    {
+        "src": "images/digital/lacrosse1.jpg",
+        "alt": "Midd Lacrosse"
+    },
+    {
+        "src": "images/digital/lacrosse2.jpg",
+        "alt": "Midd Lacrosse"
+    },
+    {
+        "src": "images/digital/lacrosse3.jpg",
+        "alt": "Midd Lacrosse"
     }
 ]
