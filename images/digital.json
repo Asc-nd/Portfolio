@@ -334,5 +334,17 @@
     {
         "src": "images/digital/lacrosse3.jpg",
         "alt": "Midd Lacrosse"
+    },
+    {
+        "src": "images/digital/nocturne1.jpg",
+        "alt": "Nocturne 2026"
+    },
+    {
+        "src": "images/digital/nocturne2.jpg",
+        "alt": "Nocturne 2026"
+    },
+    {
+        "src": "images/digital/nocturne3.jpg",
+        "alt": "Nocturne 2026"
     }
 ]
