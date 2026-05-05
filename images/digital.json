@@ -80,7 +80,7 @@
         "alt": "DCM Showing"
     },
     {
-        "src": "images/digital/afropop.jpg",
+        "src": "images/digital/afropop1.jpg",
         "alt": "Afropop"
     },
     {
@@ -346,5 +346,29 @@
     {
         "src": "images/digital/nocturne3.jpg",
         "alt": "Nocturne 2026"
+    },
+    {
+        "src": "images/digital/afropop2.jpg",
+        "alt": "Afropop"
+    },
+    {
+        "src": "images/digital/afropop3.jpg",
+        "alt": "Afropop"
+    },
+    {
+        "src": "images/digital/afropop4.jpg",
+        "alt": "Afropop"
+    },
+    {
+        "src": "images/digital/afropop5.jpg",
+        "alt": "Afropop"
+    },
+    {
+        "src": "images/digital/afropop6.jpg",
+        "alt": "Afropop"
+    },
+    {
+        "src": "images/digital/afropop7.jpg",
+        "alt": "Afropop"
     }
 ]
