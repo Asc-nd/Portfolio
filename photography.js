@@ -1,26 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Intersection Observer for lazy loading (fallback for older browsers)
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.src = img.dataset.src;  // Load the image
-                img.classList.remove('lazy');  // Optional: remove lazy class for styling
-                observer.unobserve(img);  // Stop observing once loaded
+                img.src = img.dataset.src;
+                observer.unobserve(img);
             }
         });
-    });
+    }, { rootMargin: '200px' });
 
-    // Helper function to create lazy-loaded images
     function createLazyImage(photo, container) {
         const img = document.createElement('img');
-        img.dataset.src = photo.src;  // Store src in data attribute
+        img.dataset.src = photo.src;
         img.alt = photo.alt;
-        img.loading = 'lazy';  // Native lazy loading
-        img.classList.add('lazy');  // Optional: for styling unloaded images
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.classList.add('lazy');
+        img.onload = () => img.classList.add('loaded');
         container.appendChild(img);
-        
-        // Observe for intersection (fallback)
         imageObserver.observe(img);
     }
 
@@ -42,14 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error loading film photos:', error));
 
-    // Existing lightbox code (updated for dynamic images)
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
 
-    // Use event delegation for dynamically added images
     document.addEventListener("click", (e) => {
         if (e.target.tagName === "IMG" && e.target.parentElement.classList.contains("photos")) {
-            lightboxImg.src = e.target.src || e.target.dataset.src;  // Use src if loaded, else data-src
+            lightboxImg.src = e.target.src || e.target.dataset.src;
             lightbox.style.display = "flex";
             document.body.style.overflow = "hidden";
         }
