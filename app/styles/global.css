@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Eva;
+  src: url(/assets/EVA-Matisse_Standard.ttf) format("truetype");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Eva, system-ui, sans-serif;
+  background-color: rgb(27, 22, 22);
+  color: #e6ded3;
+}
+
+h1 {
+  color: #c4ced3;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+p {
+  color: #e6ded3;
+  font-size: 20px;
+  line-height: 25px;
+  text-indent: 5%;
+}
+
+a {
+  color: #e6ded3;
+}
+
+#date,
+#class {
+  color: #c4c3d0;
+}
+
+#navbar {
+  width: 100%;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#navbar a {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.arrow {
+  display: inline-block;
+  width: 7.5px;
+  height: 7.5px;
+  border-top: 2px solid #e6ded3;
+  border-right: 2px solid #e6ded3;
+  margin: 5px;
+}
+
+.arrow-right {
+  transform: rotate(45deg);
+}
+
+footer {
+  margin-top: 32px;
+  padding: 16px;
+  color: #c4c3d0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #navbar {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 20px;
+    text-indent: 3%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .arrow {
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+  }
+}

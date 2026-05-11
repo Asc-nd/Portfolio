@@ -1,0 +1,11 @@
+body[data-slug="adam"] {
+  background-color: #4e6f96;
+}
+
+body[data-slug="adam"] h1 {
+  color: #000000;
+}
+
+body[data-slug="adam"] p {
+  color: #ccb610;
+}
