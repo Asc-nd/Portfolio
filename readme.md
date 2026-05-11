@@ -2,51 +2,73 @@
 
 ## Description
 
-A personal portfolio website showcasing my projects, photography, and creative work. Built with vanilla HTML, CSS, and JavaScript, and deployed via GitHub Pages.
+A personal portfolio website showcasing essays, poems, satire, and photography. Built with React Router 7 (framework mode), TypeScript, and MDX, prerendered to static HTML and deployed via GitHub Pages.
 
 ## Live Demo
 
-View the live portfolio at [https://asc-nd.github.io/Portfolio](https://asc-nd.github.io/Portfolio).
+[https://asc-nd.github.io/Portfolio](https://asc-nd.github.io/Portfolio)
 
 ## Features
 
-- About page
-- Photography gallery (with digital and film photography)
-- Writing showcases
+- Homepage list of essays, poems, and satire pieces (auto-generated from MDX frontmatter)
+- Per-essay color themes loaded on demand
+- Photography gallery with digital and film sections, lazy-loaded images, and click-to-zoom lightbox
+- About page with embedded Instagram and LinkedIn profile
+- Clean URLs (`/eva`, `/about`) with `.html` legacy redirects
+- Full static prerendering — no server required, no hydration jank
 - Responsive design for mobile and desktop
-- Interactive elements
 
-## Technologies Used
+## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages for hosting
-- GitHub Actions for CI/CD
-
-## Usage
-
-Browse sections via the navbar. Photography images are dynamically loaded from JSON files.
+- **React Router 7** (framework mode, `ssr: false` + `prerender`)
+- **TypeScript** (strict mode)
+- **MDX** for essay/poem/satire content with YAML frontmatter
+- **Vite** for the build pipeline
+- **GitHub Actions** (`actions/deploy-pages`) for CI/CD
+- **GitHub Pages** for hosting
 
 ## Project Structure
 
-- `assets/`: Shared styles, navbar, and utilities.
-- `images/`: Photo galleries with JSON metadata.
-- Root files: Individual page HTML/CSS/JS.
+```
+app/
+  root.tsx                  HTML shell + Navbar + Footer
+  routes.ts                 Route table (/, /about, /photography, /:slug)
+  routes/                   Route components
+  components/               Navbar, Footer, Lightbox, LazyPhotoGrid
+  content/                  MDX content
+    essays/  poems/  satire/
+  styles/                   Global + per-essay scoped themes
+    essays/  poems/  satire/
+  lib/                      Content glob loader, asset helper
+  data/                     digital.json + film.json (photo manifests)
+public/                     Static assets (fonts, images, favicon)
+docs/adding-an-essay.mdx    Runbook for adding new content
+scripts/postbuild.mjs       Writes 404.html + .nojekyll for GH Pages
+```
 
-## Contributing
+## Development
 
-Feel free to submit issues or pull requests for improvements.
+```sh
+npm install
+npm run dev          # http://localhost:5173
+npm run build        # outputs static site to build/client/
+npm run lint
+npm run typecheck
+```
 
-## License
+## Adding Content
 
-This project is for personal use.
+See [docs/adding-an-essay.mdx](docs/adding-an-essay.mdx) for the full step-by-step. TL;DR: drop a new `.mdx` file under `app/content/<kind>/<slug>.mdx` with frontmatter, and it shows up on the homepage and at `/<slug>` automatically.
+
+## Deployment
+
+Pushes to `main` trigger [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which runs `npm ci`, `npm run build` (with `BASE_PATH=/Portfolio/`), and publishes `build/client/` to GitHub Pages via `actions/deploy-pages`.
+
+GitHub Pages source must be set to "GitHub Actions" in repo Settings → Pages.
 
 ## Contact
 
-Email: andy.gobin115@gmail.com  
+Email: andy.gobin115@gmail.com
 GitHub: [Asc-nd](https://github.com/Asc-nd)
 
-[![pages-build-deployment](https://github.com/Asc-nd/Portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Asc-nd/Portfolio/actions/workflows/pages/pages-build-deployment)
-
-[![Node.js CI](https://github.com/Asc-nd/Portfolio/actions/workflows/node.js.yml/badge.svg)](https://github.com/Asc-nd/Portfolio/actions/workflows/node.js.yml)
+[![Deploy to GitHub Pages](https://github.com/Asc-nd/Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Asc-nd/Portfolio/actions/workflows/deploy.yml)
