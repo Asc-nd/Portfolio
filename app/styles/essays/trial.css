@@ -1,0 +1,11 @@
+body[data-slug="trial"] {
+  background-color: #db8f9d;
+}
+
+body[data-slug="trial"] h1 {
+  color: #8dd1b1;
+}
+
+body[data-slug="trial"] p {
+  color: #323232;
+}

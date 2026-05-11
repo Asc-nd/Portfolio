@@ -1,0 +1,11 @@
+body[data-slug="insignificant"] {
+  background-color: #44342b;
+}
+
+body[data-slug="insignificant"] h1 {
+  color: #686a6c;
+}
+
+body[data-slug="insignificant"] p {
+  color: #eeeeee;
+}
