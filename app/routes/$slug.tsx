@@ -31,7 +31,7 @@ const themeBySlug: Record<string, string> = {
 };
 
 const SPECIAL_REDIRECTS: Record<string, string> = {
-  "index.html": "/",
+  "": "/",
 };
 
 export function meta({ params }: { params: { slug: string } }) {
