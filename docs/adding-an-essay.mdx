@@ -1,0 +1,162 @@
+# Adding a new essay (or poem / satire)
+
+A repeatable checklist for publishing new content to the portfolio. This doc lives at `docs/adding-an-essay.mdx` for in-repo reference; it is **not** site content (it sits outside `app/content/`, so the homepage and slug router don't see it).
+
+## How the system picks up new content
+
+Three things make discovery automatic:
+
+1. **Homepage list** — [`app/lib/content.ts`](../app/lib/content.ts) uses `import.meta.glob` over `app/content/{essays,poems,satire}/*.mdx`. [`app/routes/_index.tsx`](../app/routes/_index.tsx) calls `contentByKind("essay")` / `"poem"` / `"satire"` and renders them.
+2. **Slug route** — [`app/routes/$slug.tsx`](../app/routes/$slug.tsx) looks up the MDX module by frontmatter `slug:` via `contentBySlug.get(slug)`.
+3. **Prerender** — [`react-router.config.ts`](../react-router.config.ts) reads each content folder with `readdirSync` and adds `/<slug>` to the prerender list, so the new page gets a static `.html` at build time.
+
+Nothing wired by hand. The only manual touch points are per-essay theming (CSS file + 2 lines in `$slug.tsx`).
+
+---
+
+## Steps
+
+### 1. Create the MDX file
+
+Pick the right folder by **kind**:
+
+- Essay → `app/content/essays/<slug>.mdx`
+- Poem → `app/content/poems/<slug>.mdx`
+- Satire → `app/content/satire/<slug>.mdx`
+
+The filename `<slug>` becomes the URL: `/<slug>` (e.g. `app/content/essays/myEssay.mdx` → `/myEssay`). Use camelCase to match the existing convention (`goldenBough`, `formativeStranger`).
+
+Paste this template and fill in:
+
+````mdx
+---
+title: "Title that appears as the page heading and on the homepage list"
+slug: myEssay
+kind: essay
+class: "Optional course name"
+date: "Month DD, YYYY"
+bibliography:
+  - label: "Citation text"
+    url: "https://example.com"
+---
+
+First paragraph of prose. Markdown italics with `*word*`, bold with `**word**`,
+links like [text](https://example.com), inline JSX/HTML is fine.
+
+Second paragraph.
+
+Third paragraph.
+````
+
+**Three values must agree:**
+
+- the filename (`myEssay.mdx`)
+- the `slug:` frontmatter value (`myEssay`)
+- the `kind:` frontmatter value, which must match the folder it lives in (`essay` for files under `essays/`, `poem` for `poems/`, `satire` for `satire/`)
+
+**Optional fields** — omit any of these entirely if not relevant:
+
+- `subtitle` — renders as a smaller `<h2>` below the title
+- `class` — renders as "Written for: …"
+- `date` — renders as "Written on …"
+- `bibliography` — renders as a footer list at the bottom of the article
+
+---
+
+### 2. (Optional) Add a per-essay color theme
+
+If the essay should have its own background / heading / paragraph colors (like the existing essays), three small changes:
+
+**a.** Create the CSS file at the matching folder, named `<slug>.css`:
+
+- Essay theme → `app/styles/essays/<slug>.css`
+- Poem theme → `app/styles/poems/<slug>.css`
+- Satire theme → `app/styles/satire/<slug>.css`
+
+Scope every rule under `body[data-slug="<slug>"]` so it only applies when the user is on that essay. Example:
+
+```css
+body[data-slug="myEssay"] {
+  background-color: #224466;
+}
+
+body[data-slug="myEssay"] h1 {
+  color: #ffd700;
+}
+
+body[data-slug="myEssay"] p {
+  color: #eeeeee;
+}
+```
+
+**b.** Import the CSS at the top of [`app/routes/$slug.tsx`](../app/routes/$slug.tsx):
+
+```tsx
+import myEssayCss from "~/styles/essays/myEssay.css?url";
+```
+
+**c.** Add the slug → CSS mapping to the `themeBySlug` map in the same file:
+
+```tsx
+const themeBySlug: Record<string, string> = {
+  // ...existing entries...
+  myEssay: myEssayCss,
+};
+```
+
+The route renders `<link rel="stylesheet" href={themeBySlug[slug]} />` only for the matching slug, so other essays don't pay the bandwidth cost.
+
+If the essay is fine with the global dark theme from [`app/styles/global.css`](../app/styles/global.css), skip this whole step.
+
+---
+
+### 3. (Optional) Reference assets
+
+If the essay embeds an image, put it under `public/<wherever>/` (e.g. `public/assets/myimage.jpg`) and reference it with `import.meta.env.BASE_URL` so it works under the GitHub Pages basename:
+
+```mdx
+<img src={`${import.meta.env.BASE_URL}assets/myimage.jpg`} alt="..." />
+```
+
+See [`app/content/essays/aiEDU.mdx`](../app/content/essays/aiEDU.mdx) for an example.
+
+---
+
+### 4. Preview
+
+```sh
+npm run dev
+```
+
+Visit `http://localhost:5173/` — the new essay should appear in the right section of the homepage (under "Papers by me:" / "Poems by me:" / "Satire papers by me:"). Click through to `http://localhost:5173/<slug>` to verify the article renders, the title/class/date show, and the optional theme applies.
+
+---
+
+### 5. Build + deploy
+
+```sh
+git add app/content/<kind>/<slug>.mdx
+# only if you added a theme:
+git add app/styles/<kind>/<slug>.css app/routes/\$slug.tsx
+git commit -m "Add new <essay|poem|satire>: <slug>"
+git push origin main
+```
+
+The GitHub Actions workflow at [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml) triggers on push to `main`. It runs `npm ci`, `npm run build` (with `BASE_PATH=/Portfolio/`), and publishes to GitHub Pages. The new URL will be `https://asc-nd.github.io/Portfolio/<slug>` once the green check appears in the Actions tab.
+
+---
+
+## Quick reference
+
+| Action | Files touched |
+| --- | --- |
+| New essay, no theme | `app/content/essays/<slug>.mdx` |
+| New essay with theme | + `app/styles/essays/<slug>.css` + 2 lines in `app/routes/$slug.tsx` |
+| New poem | `app/content/poems/<slug>.mdx` (+ optional theme in `app/styles/poems/`) |
+| New satire | `app/content/satire/<slug>.mdx` (+ optional theme in `app/styles/satire/`) |
+
+## Out of scope
+
+- Editing or removing existing essays — same process in reverse, but slug coordination is your job (links to the old slug will 404).
+- Changing the global look (font, base colors) — that's a [`global.css`](../app/styles/global.css) edit, not a new-essay step.
+- Adding a new _kind_ (e.g. "interviews") — that needs `lib/content.ts` glob update, `_index.tsx` section, and `react-router.config.ts` enumeration; not part of "add a new essay".
