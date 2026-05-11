@@ -5,8 +5,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
   font-family: Eva, system-ui, sans-serif;
   background-color: rgb(27, 22, 22);
@@ -30,6 +28,7 @@ p {
   font-size: 20px;
   line-height: 25px;
   text-indent: 5%;
+  padding: 0 2%;
 }
 
 a {
