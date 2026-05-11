@@ -30,8 +30,9 @@ const themeBySlug: Record<string, string> = {
   traffic: trafficCss,
 };
 
+//Need to fix
 const SPECIAL_REDIRECTS: Record<string, string> = {
-  "Porto": "/",
+  "": "/",
 };
 
 export function meta({ params }: { params: { slug: string } }) {
