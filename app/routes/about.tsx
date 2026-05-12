@@ -1,8 +1,12 @@
 import { useEffect } from "react";
+import type { LinksFunction } from "react-router";
+import aboutStyles from "~/styles/about.css?url";
 
 export function meta() {
   return [{ title: "About — Andy Gobin" }];
 }
+
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: aboutStyles }];
 
 function loadScript(src: string) {
   if (document.querySelector(`script[src="${src}"]`)) return;
@@ -19,7 +23,9 @@ export default function About() {
   }, []);
 
   return (
-    <main>
+    <main className="about-page">
+      <h1>About</h1>
+
       <p>
         Hello, I am Andy, a first-generation college student born and raised in the Bronx. My
         passion for Computer Science sparked in middle school and has only grown since then. I
@@ -30,10 +36,23 @@ export default function About() {
       </p>
 
       <p>
-        I have experience in the computer science field, and I have experience with various coding
-        languages, including Java, JavaScript, Python, HTML, Kotlin, and C#. I also have experience
-        with Unity and the Adobe Creative Cloud. I also have experience doing IT work by functioning
-        as the IT Specialist for my church over the past few years.
+        I have experience in the computer science field across a range of languages and tools:
+      </p>
+      <ul className="skills">
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>Kotlin</li>
+        <li>C#</li>
+        <li>TypeScript</li>
+        <li>Unity</li>
+        <li>Adobe Creative Cloud</li>
+      </ul>
+
+      <p>
+        I also have experience doing IT work, functioning as the IT Specialist for my church over
+        the past few years.
       </p>
 
       <p>
@@ -52,35 +71,38 @@ export default function About() {
 
       <div className="links">
         <p>
-          Feel free to reach out to me at <u>Andy.Gobin115@gmail.com</u>
+          Feel free to reach out at{" "}
+          <a href="mailto:Andy.Gobin115@gmail.com">Andy.Gobin115@gmail.com</a>, or via the links
+          below:
         </p>
-        <p>Or reach out to me at the links below:</p>
 
-        <div className="insta-wrapper">
-          <blockquote
-            className="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/ascnd.jpeg/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"
-          />
-        </div>
+        <div className="socials">
+          <div className="insta-wrapper">
+            <blockquote
+              className="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/ascnd.jpeg/?utm_source=ig_embed&utm_campaign=loading"
+              data-instgrm-version="14"
+            />
+          </div>
 
-        <div
-          className="badge-base LI-profile-badge"
-          data-locale="en_US"
-          data-size="large"
-          data-theme="dark"
-          data-type="HORIZONTAL"
-          data-vanity="andy-gobin"
-          data-version="v1"
-        >
-          <a
-            className="badge-base__link LI-simple-link"
-            href="https://www.linkedin.com/in/andy-gobin?trk=profile-badge"
-            target="_blank"
-            rel="noreferrer"
+          <div
+            className="badge-base LI-profile-badge"
+            data-locale="en_US"
+            data-size="large"
+            data-theme="dark"
+            data-type="HORIZONTAL"
+            data-vanity="andy-gobin"
+            data-version="v1"
           >
-            Andy Gobin
-          </a>
+            <a
+              className="badge-base__link LI-simple-link"
+              href="https://www.linkedin.com/in/andy-gobin?trk=profile-badge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Andy Gobin
+            </a>
+          </div>
         </div>
       </div>
     </main>

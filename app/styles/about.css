@@ -1,0 +1,93 @@
+.about-page {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 16px 24px 48px;
+}
+
+.about-page h1 {
+  text-align: left;
+  font-size: 42px;
+  margin: 8px 0 24px;
+  color: #c4ced3;
+}
+
+.about-page h2 {
+  text-align: left;
+  font-size: 22px;
+  margin: 32px 0 12px;
+  color: #c4ced3;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about-page p {
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #e6ded3;
+}
+
+.about-page p + p {
+  margin-top: 18px;
+}
+
+.about-page a {
+  color: #c4ced3;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196, 206, 211, 0.4);
+}
+
+.about-page a:hover {
+  border-bottom-color: #e6ded3;
+  color: #e6ded3;
+}
+
+.about-page .skills {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-page .skills li {
+  font-size: 14px;
+  padding: 4px 12px;
+  border: 1px solid rgba(230, 222, 211, 0.25);
+  background: rgba(230, 222, 211, 0.06);
+  border-radius: 999px;
+  color: #e6ded3;
+}
+
+.about-page .links {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(230, 222, 211, 0.15);
+}
+
+.about-page .socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.about-page .socials > * {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 12px 16px 32px;
+  }
+  .about-page h1 {
+    font-size: 32px;
+  }
+  .about-page p {
+    font-size: 16px;
+  }
+}
