@@ -64,6 +64,10 @@ a {
   transform: rotate(45deg);
 }
 
+.arrow-left {
+  transform: rotate(-135deg);
+}
+
 footer {
   margin-top: 32px;
   padding: 16px;

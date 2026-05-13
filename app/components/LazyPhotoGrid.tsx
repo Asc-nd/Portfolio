@@ -4,10 +4,11 @@ import type { Photo } from "~/types";
 
 interface Props {
   photos: Photo[];
-  onPhotoClick: (src: string) => void;
+  section: string;
+  onPhotoClick: (index: number) => void;
 }
 
-export function LazyPhotoGrid({ photos, onPhotoClick }: Props) {
+export function LazyPhotoGrid({ photos, section, onPhotoClick }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [loaded, setLoaded] = useState<Set<number>>(new Set());
 
@@ -37,19 +38,20 @@ export function LazyPhotoGrid({ photos, onPhotoClick }: Props) {
   }, [photos]);
 
   return (
-    <div className="photos" ref={containerRef}>
+    <div className="photos" ref={containerRef} data-section={section}>
       {photos.map((photo, i) => {
         const src = asset(photo.src);
         return (
           <img
             key={src}
             data-src={src}
+            data-index={i}
             alt={photo.alt}
             loading="lazy"
             decoding="async"
             className={loaded.has(i) ? "lazy loaded" : "lazy"}
             onLoad={() => setLoaded((s) => new Set(s).add(i))}
-            onClick={() => onPhotoClick(src)}
+            onClick={() => onPhotoClick(i)}
           />
         );
       })}
