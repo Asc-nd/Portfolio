@@ -59,7 +59,7 @@ export default function About() {
         As a photographer, I have built up my reputation on dependability and quick turnaround
         rates. My clients consistently recommend me to their colleagues and are often repeat
         clients. I first started off as a photographer at my high school before getting into events
-        and being a street photographer in my free time. I am also vice president of the Middlebury
+        and being a street photographer in my free time. I am also president of the Middlebury
         Darkroom Film Photography club and spend a lot of my time there.
       </p>
 
