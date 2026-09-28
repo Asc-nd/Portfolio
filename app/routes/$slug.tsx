@@ -16,18 +16,18 @@ import redStarCss from "~/styles/poems/redStar.css?url";
 import trafficCss from "~/styles/satire/traffic.css?url";
 
 const themeBySlug: Record<string, string> = {
-  eva: evaCss,
-  adam: adamCss,
-  aiEDU: aiEDUCss,
-  aiInvestigation: aiInvestigationCss,
-  formativeStranger: formativeStrangerCss,
-  goldenBough: goldenBoughCss,
-  insignificant: insignificantCss,
-  monotonicity: monotonicityCss,
-  mysticismResponses: mysticismResponsesCss,
-  trial: trialCss,
-  redStar: redStarCss,
-  traffic: trafficCss,
+  "Freedom-and-possibility:-Existentialism-and-the-state-of-nature-in-Evangelion": evaCss,
+  "Exile-and-Adam": adamCss,
+  "ChatGPT-and-the-Sophistication-Point": aiEDUCss,
+  "AI-investigation:-A-critique-on-a-generative-AI's-book-review-on-The-Stranger": aiInvestigationCss,
+  "Unit-4:-Lesson-6-Formative;-The Stranger": formativeStrangerCss,
+  "Sacrifice-and-Resurrection:-The-Killing-of-gods": goldenBoughCss,
+  Insignificant: insignificantCss,
+  "Monotonicity-=-Comfortability:-Absurdism-in-The-Stranger": monotonicityCss,
+  "Christian-Mysticism-Responses": mysticismResponsesCss,
+  "K.-and-The-Trial:-Kafka-and-the-Arbitrary": trialCss,
+  "The-Fall-of-The-Soviet-Union": redStarCss,
+  "Traffic-lights-=-Racist": trafficCss,
 };
 
 const SPECIAL_REDIRECTS: Record<string, string> = {
